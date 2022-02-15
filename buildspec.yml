@@ -13,3 +13,4 @@ phases:
 artifacts:
   files:
     - target/helloworld-1.0.jar
+  name: builds/$CODEBUILD_BUILD_NUMBER/my-artifacts
