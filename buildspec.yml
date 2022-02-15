@@ -1,1 +1,13 @@
-#buildspec code goes in here
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - mvn package
+artifacts:
+  files:
+    - target/helloworld-1.0.jar
